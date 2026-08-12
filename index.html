@@ -68,11 +68,82 @@
         <li>Machine Learning Enthusiast</li>
     </ul>
 </aside>
+    <section id="todo" aria-labelledby="todo-heading">
+
+    <h2 id="todo-heading">My To-Do List</h2>
+
+    <p>
+        Manage your tasks and keep track of your daily goals.
+    </p>
+
+    <form id="todo-form" aria-label="Add a new task">
+
+        <label for="todo-input">Task</label>
+
+        <div class="todo-input-group">
+
+            <input
+                type="text"
+                id="todo-input"
+                name="task"
+                placeholder="Enter a task..."
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">
+                Add Task
+            </button>
+
+        </div>
+
+    </form>
+
+
+    <div class="todo-filters" aria-label="Task filters">
+
+        <button
+            type="button"
+            class="filter-btn active"
+            data-filter="all">
+            All
+        </button>
+
+        <button
+            type="button"
+            class="filter-btn"
+            data-filter="active">
+            Active
+        </button>
+
+        <button
+            type="button"
+            class="filter-btn"
+            data-filter="completed">
+            Completed
+        </button>
+
+    </div>
+
+
+    <ul
+        id="todo-list"
+        class="todo-list"
+        aria-live="polite">
+    </ul>
+
+
+    <p id="todo-count">
+        0 tasks
+    </p>
+
+</section>
 </main>
 <footer>
     <p>&copy; 2026 Nikhil D. All Rights Reserved.</p>
 </footer>
 <script src="theme.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>
 ```
