@@ -138,12 +138,132 @@
     </p>
 
 </section>
+    <section id="weather" aria-labelledby="weather-heading">
+
+    <h2 id="weather-heading">Weather Dashboard</h2>
+
+    <p>
+        Search for a city to view its current weather information.
+    </p>
+
+    <form id="weather-form" aria-label="Search weather">
+
+        <label for="city-input">City Name</label>
+
+        <div class="weather-search">
+
+            <input
+                type="text"
+                id="city-input"
+                name="city"
+                placeholder="Enter city name"
+                autocomplete="off"
+                required
+            >
+
+            <button type="submit">
+                Search
+            </button>
+
+        </div>
+
+    </form>
+
+
+    <!-- Error message -->
+
+    <p
+        id="weather-error"
+        class="weather-error"
+        role="alert"
+        hidden>
+    </p>
+
+
+    <!-- Loading message -->
+
+    <p
+        id="weather-loading"
+        hidden>
+        Loading weather...
+    </p>
+
+
+    <!-- Weather result -->
+
+    <article
+        id="weather-result"
+        class="weather-result"
+        aria-live="polite"
+        hidden>
+
+        <h3 id="weather-city"></h3>
+
+        <div class="weather-grid">
+
+            <div class="weather-card">
+
+                <span class="weather-label">
+                    Temperature
+                </span>
+
+                <strong id="weather-temperature">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="weather-card">
+
+                <span class="weather-label">
+                    Humidity
+                </span>
+
+                <strong id="weather-humidity">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="weather-card">
+
+                <span class="weather-label">
+                    Wind Speed
+                </span>
+
+                <strong id="weather-wind">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="weather-card">
+
+                <span class="weather-label">
+                    Weather
+                </span>
+
+                <strong id="weather-condition">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </article>
+
+</section>
 </main>
 <footer>
     <p>&copy; 2026 Nikhil D. All Rights Reserved.</p>
 </footer>
 <script src="theme.js"></script>
     <script src="todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
 ```
